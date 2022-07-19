@@ -1,4 +1,4 @@
-# Data Structures and Algorithims
+# Data Structures and Algorithims in Typescript
 <!--&check;-->
 <!--&cross;-->
 | Algorithmic Complexity Analysis / Big O Notation               | status |
