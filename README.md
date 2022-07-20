@@ -3,7 +3,7 @@
 <!--&cross;-->
 | Algorithmic Complexity Analysis / Big O Notation               | status |
 | ------------------------------------------------- | ---- |
-| Time Comple Complexity  | &cross; |
+| Time Comple Complexity  | &check; |
 | Space Complexity | &cross; |
 
 
@@ -23,3 +23,8 @@
 | Linear Search / Binary Search | &cross; |
 | BFS / DPS | &cross; |
 | Dynamic Programming  | &cross; |
+
+sudo apt-get update
+sudo dpkg --configure -a
+sudo apt-get dist-upgrade
+sudo apt-get -f install
