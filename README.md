@@ -4,8 +4,6 @@
 | Algorithmic Complexity Analysis / Big O Notation               | status |
 | ------------------------------------------------- | ---- |
 | Time Comple Complexity  | &check; |
-| Space Complexity | &cross; |
-
 
 | Data Structures                                   | status |
 | ------------------------------------------------- | ---- |
