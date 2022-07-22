@@ -68,6 +68,21 @@ class LinkedList {
         this.length++
     }
 
+    public Remove(index:number):void {
+        // Error if we try to get the index value before our delete index
+        if (index === 0) {
+            // Makes our second node in our linked list our head
+            this.head = this.TraverseToIndex(index).next;
+        }
+        // Get the node before our intended delete index
+        const leader = this.TraverseToIndex(index - 1);
+        // Get the node after our intended delete index
+        const follower = this.TraverseToIndex(index + 1);
+        // Connect the leader and follower, cutting the intended delete value off
+        leader.next = follower;
+        this.length--;
+    }
+
     private TraverseToIndex(index:number) {
         let counter = 0;
         let currentNode = this.head;
@@ -80,10 +95,10 @@ class LinkedList {
 }
 
 const mylist:LinkedList = new LinkedList('hello');
-mylist.Append("World");
-mylist.Append("!");
-mylist.Prepend("George");
-mylist.Prepend("Dwight");
-mylist.Append("Costanza");
-mylist.Insert(2, "Elaine")
+mylist.Append("Elaine");
+mylist.Append("Oscar");
+mylist.Append("George");
+mylist.Append("Levi");
+mylist.Append("Valentina");
+mylist.Remove(3);
 console.log(mylist.Get())
