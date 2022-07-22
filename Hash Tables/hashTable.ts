@@ -26,6 +26,7 @@ class HashTable {
             this.data[address].push([key, value]);
         }
         // Collision - If hashed key has been found!
+        // Even if two keys share the same address (hash) - They might not be the same key 
         if (this.data[address]) {
             let found: boolean = false;
             // Check every bucket within our address to verify that our insert key and our existing key are not the same
@@ -40,6 +41,21 @@ class HashTable {
                 this.data[address].push([key, value]);
             }
         }
+    }
+
+    public Keys():Array<string> {
+        // Storage for keys array
+        let keys:Array<string> = [];
+
+        // Iterate through our array
+        for (let i = 0; i < this.data.length; i++) {
+            // Check that the current element has a value
+            if (this.data[i]) {
+                // Push the key - DISCLAIMER: DOES NOT CHECK FOR OTHER KEYS IF COLLISION
+                keys.push(this.data[i][0][0])
+            }
+        }
+        return keys;
     }
   
     private _hash(key:string) {
@@ -60,3 +76,4 @@ class HashTable {
   console.log(
       myHashTable.Get('apples')
   )
+  myHashTable.Keys();
