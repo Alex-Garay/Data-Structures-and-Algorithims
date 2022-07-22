@@ -11,7 +11,6 @@ const first = (numbers:number[]):number | null => {
         }
         // Add our numbers to our set
         unique.add(numbers[i])
-
     }
     return null;
 }
