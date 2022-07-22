@@ -7,7 +7,7 @@
 
 | Data Structures                                   | status |
 | ------------------------------------------------- | ---- |
-| Arrays  | &cross; |
+| Arrays  | &check; |
 | Hash Tables  | &cross; |
 | Linked Lists  | &cross; |
 | Stacks / Queues  | &cross; |
