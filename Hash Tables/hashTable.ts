@@ -8,8 +8,8 @@ class HashTable {
     }
 
     public Get(key: string) {
+        // Hashes our key
         const address = this._hash(key);
-
         if (this.data[address] && this.data[address].length === 1) {
             return this.data[address][0]
         }
