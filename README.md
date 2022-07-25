@@ -9,7 +9,7 @@
 | ------------------------------------------------- | ---- |
 | Arrays  | &check; |
 | Hash Tables  | &check; |
-| Linked Lists  | &cross; |
+| Linked Lists  | &check; |
 | Stacks / Queues  | &cross; |
 |  Trees | &cross; |
 |  Graphs | &cross; |
